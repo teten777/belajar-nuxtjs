@@ -30,7 +30,8 @@ export default {
   ** Global CSS
   */
   css: [
-    { src: 'vue-material/dist/vue-material.min.css', lang: 'css'}
+    { src: 'vue-material/dist/vue-material.min.css', lang: 'css'},
+    { src: '~/assets/theme.scss', lang: 'scss'}
   ],
   /*
   ** Plugins to load before mounting the App
