@@ -38,7 +38,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~/plugins/vue-material'}
+    { src: '~/plugins/vue-material'},
+    { src: '~/plugins/axios'}
   ],
   /*
   ** Auto import components
@@ -61,7 +62,14 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {},
+  axios: {
+    credentials: true
+  },
+
+  env: {
+    NEWS_API_KEY: 'ecddf59aeb62499b9af2d2f963455e71777'
+  },
+
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
